@@ -1,8 +1,8 @@
 # My.self
-A very tiny javascript library to build very simple personal pages.
+A very tiny JavaScript library to build very simple personal pages.
 
 # Usage
-Simply add a link to jQuery and my.self into your page and nothing more! It is indeed not a very good standard, however is the tiniest possible. So your whole html document should look like:
+Simply add a link to jQuery and my.self into your page and nothing more! It is indeed not a very good standard, however is the tiniest possible. So your whole HTML document should look like:
 
 ```html
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -21,19 +21,19 @@ The object `My` has a single method that can be accessed which is `self`.
 
 The `self` method takes as input a object that must contain at least three attributes:
 
-- `@name` the name of the user
+- `@name` The name of the user
 
-- `@bg` a colour to be applied on the background
+- `@bg` A colour to be applied on the background
 
-- `@color` the font color
+- `@color` The font color
 
 There are also optional attributes that can be used:
 
-- `@font` a 2-dimensional array, in which the first is the name of the font to be used in the title, and the second, the font to be used on the links. These font names should be taken from Google Fonts. If a different size is given, the array is changed to comprise the same font in the first and second indexes. (default sans-serif).
+- `@font` A 2-dimensional array, in which the first is the name of the font to be used in the title, and the second, the font to be used on the links. These font names should be taken from Google Fonts. If a different size is given, the array is changed to comprise the same font in the first and second indexes. (default sans-serif).
 
-- `@shadow` the percentage of difference between @bg and the shadow being applied. (default -40).
+- `@shadow` The percentage of difference between @bg and the shadow being applied. (default -40).
 
-- `@social` an object that should map a name to a link. The names will be displayed as links to the given URLs.
+- `@social` An object that should map a name to a link. The names will be displayed as links to the given URLs.
 
 # Example
 
@@ -56,7 +56,7 @@ my.self({
 });
 ```
 
-Is going to result in the following view:
+Is going to result into the following page:
 
 ![Result](https://cloud.githubusercontent.com/assets/1520534/6429536/61a49034-bfb7-11e4-927d-8a3fc71631ec.png)
 

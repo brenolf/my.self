@@ -1,5 +1,5 @@
 /*
-    my.self v 0.1
+    my.self v 0.1  | (c) 2015 Breno Lima de Freitas - breno.io | Licensed under MIT
 
     my.self is a very simple library for creating
     very simple web pages.
