@@ -66,11 +66,12 @@
                 if (incomplete(bio))
                     return false;
 
-                $('head').append('<title>Hi, I\'m ' + bio.name + '</title>');
-
+                var head = $('head');
                 var body = $(document.body);
                 var title = $('<div>Hi, I\'m ' + bio.name + '</div>');
                 var marginTop = bio.margin ? bio.margin : '2em';
+
+                head.append('<title>Hi, I\'m ' + bio.name + '</title>');
 
                 var social = $('<ul></ul>');
 
@@ -94,10 +95,10 @@
                         bio.font[1].replace(/\s+/g, '+')
                     ];
 
-                    body.prepend("<link href='http://fonts.googleapis.com/css?family=" + escaped_font[0] + "' rel='stylesheet' type='text/css'>");
+                    head.append("<link href='http://fonts.googleapis.com/css?family=" + escaped_font[0] + "' rel='stylesheet' type='text/css'>");
 
                     if (escaped_font[0] !== escaped_font[1])
-                        body.prepend("<link href='http://fonts.googleapis.com/css?family=" + escaped_font[1] + "' rel='stylesheet' type='text/css'>");
+                       head.append("<link href='http://fonts.googleapis.com/css?family=" + escaped_font[1] + "' rel='stylesheet' type='text/css'>");
 
                     fonts[0] = '"' + bio.font[0] + '" ' + fonts[0];
                     fonts[1] = '"' + bio.font[1] + '" ' + fonts[1];
