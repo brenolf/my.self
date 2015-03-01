@@ -60,6 +60,8 @@ Is going to result into the following page:
 
 ![Result](https://cloud.githubusercontent.com/assets/1520534/6429536/61a49034-bfb7-11e4-927d-8a3fc71631ec.png)
 
+# Known issues
+- Firefox does not render the dynamically added font
 
 # License
 MIT
